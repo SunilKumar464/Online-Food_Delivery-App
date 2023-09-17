@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Online Food Delivery Service in India | MyOnline Meal.com</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px)" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    /* background-image: url(http://images6.fanpop.com/image/photos/36100000/Food-image-food-36147866-6668-4992.jpg);
+    background-repeat: no-repeat; */
+    background-color: black;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    
+}
+
+#navbar::before{
+    content: "";
+    background-color:black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+    
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+    
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: rgb(148, 36, 36);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('../bg1.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+#home h1{
+    color:rgb(42, 89, 4);
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+#home p{
+    color:rgb(203, 186, 30);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+}
+/* Services Section */
+#services{
+    margin: 34px;
+    display: flex;
+    color: #f2f2f2;
+}
+#services .box{ 
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+
+/* Clients Section */
+#client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url('../bg.jpg');
+ width: 100%;
+ height: 100%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+
+
+footer{
+    background: rgb(114, 7, 74);
+    color: rgb(60, 107, 189);
+    padding: 9px 20px;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-family: 'Bree Serif', serif;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.center{
+    text-align: center;
+}
+
+    </style>
+    
+</head>
+
+<body>
+    <nav id="navbar">
+
+
+
+
+        <div id="logo">
+            <img src="https://www.freeiconspng.com/uploads/food-icon-7.png">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Our Clients</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h1 class="h-primary">WelcomE to Our Online MeaL</h1>
+        <p> Here you can find any kind of delicious food or dishes.... <br>
+    Like South Indian , North Indian , East Indian, Chinese, Itlian......... </p>
+        <p>in this site if you order some food then the food can rich you on proper time ... 
+       </p>
+        <p>THANK YOU </p>
+        <form action="https://www.chefspencil.com/the-best-20-cooking-websites/#:~:text=The%20Best%2021%20Cooking%20Websites%201%201.%20Allrecipes,...%207%207.%20Kitchn%20...%208%208.%20Food.com">
+        <button class="btn">Order Now</button>
+    </form>
+        
+    </section>
+
+    <section id="services-container">
+        <h1 class="h-primary center" style="color: aliceblue;">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/1.png" alt="">
+                <h2 class="h-secondary center">Food Catering</h2>
+                <p class="center">A caterer provides hot or cold food to clients at a remote location. The food offer could be anything from hot gourmet meals prepared on-site to buffet food served in chafing dishes or party platters of cheese, meats and snacks.Catering companies send servers, chefs and other employees to the site for black tie parties, conventions and other events. A small office party may only require cold food, beverages and furniture or equipment rental without catering employees on premises — caterers tend to be very flexible with service.
+                </p>
+            </div>
+            <div class="box">
+                <img src="img/2.png" alt="">
+                <h2 class="h-secondary center">Bulk Ordering</h2>
+                <p class="center">Bulk ordering is the practice of purchasing a large quantity of products in a single transaction. It is commonly used by businesses, organisations, and individuals who need to buy products in large quantities to get better pricing or to meet their inventory or stocking needs.
+
+                    It is also used by various industries, including eCommerce, retail, construction and manufacturing, to stock their inventory, resell products, or meet the demand of large orders. Bulk ordering can benefit both the buyer and the seller by reducing the cost for the buyer and increasing the sales volume for the seller.</p>
+            </div>
+            <div class="box">
+                <img src="img/3.png" alt="">
+                <h2 class="h-secondary center">Food Ordering</h2>
+                <p class="center"> Online food ordering is the process of ordering food, for delivery or pickup, from a website or other application. The product can be either ready-to-eat food (e.g., direct from a home-kitchen, restaurant, or a virtual restaurant) or food that has not been specially prepared for direct consumption (e.g., vegetables direct from a farm/garden, fruits, frozen meats. etc).
+
+                    Online food ordering/delivery through third-party companies has emerged as a global industry, leading to a "delivery revolution."[1] From 2018 to 2021, global revenues for the online food delivery sector rose from $90 billion to $294 billion.</p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center" style="color: aliceblue;">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="https://smedia2.intoday.in/aajtak/images/Photo_gallery/092019/pizza-4239775_021620043545.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://www.socialbeat.in/wp-content/themes/socialbeat/assets/images/casestudy/swiggy/swiggy_boy.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="https://www.pngarts.com/files/7/Food-Delivery-PNG-Picture.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="https://aglioolio.com.sg/wordpress/wp-content/uploads/2020/04/delivery-illustration.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact">
+        <h1 class="h-primary center" style="color: aliceblue;">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name" style="color: aliceblue;">Name: </label>
+                    <input style="color: aliceblue;" type="text" name="name" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" style="color: aliceblue;">Email: </label>
+                    <input style="color: aliceblue;" type="email" name="name" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone"style="color: aliceblue;">Phone Number: </label>
+                    <input style="color: aliceblue;" type="phone" name="name" id="phone" placeholder="Enter your phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" style="color: aliceblue;">Message: </label>
+                    <textarea style="color: aliceblue;" name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="submit" style="color: rgb(201, 233, 20);">
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            Copyright &copy; www.myOnlineMeal.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>
